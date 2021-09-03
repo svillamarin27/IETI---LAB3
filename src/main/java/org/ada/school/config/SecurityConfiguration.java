@@ -24,5 +24,7 @@ public class SecurityConfiguration
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS );
+                .antMatchers ( HttpMethod . POST , " / v1 / user " ) . permitAll ();
+
     }
 }

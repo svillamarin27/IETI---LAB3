@@ -16,16 +16,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Calendar;
 import java.util.Date;
 
-//import static org.ada.school.utils.Constants.CLAIMS_ROLES_KEY;
-//import static org.ada.school.utils.Constants.TOKEN_DURATION_MINUTES;
+import static org.ada.school.utils.Constants.CLAIMS_ROLES_KEY;
+import static org.ada.school.utils.Constants.TOKEN_DURATION_MINUTES;
 
 @RestController
 @RequestMapping( "v1/auth" )
 public class AuthController
 {
 
-    private static final String CLAIMS_ROLES_KEY = null;
-    private static final int TOKEN_DURATION_MINUTES = 0;
+    //private static final String CLAIMS_ROLES_KEY = null;
+    //private static final int TOKEN_DURATION_MINUTES = 0;
     @Value( "${app.secret}" )
     String secret;
 
