@@ -24,8 +24,8 @@ import static org.ada.school.utils.Constants.TOKEN_DURATION_MINUTES;
 public class AuthController
 {
 
-    //private static final String CLAIMS_ROLES_KEY = null;
-    //private static final int TOKEN_DURATION_MINUTES = 0;
+    private static final String CLAIMS_ROLES_KEY = null;
+    private static final int TOKEN_DURATION_MINUTES = 0;
     @Value( "${app.secret}" )
     String secret;
 
