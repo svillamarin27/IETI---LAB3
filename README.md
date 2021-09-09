@@ -626,6 +626,10 @@ class SecurityConfiguration : WebSecurityConfigurerAdapter() {
 6. Run the project and verify that it works as expected following these steps:
    * Start the server.
    * Send a POST request to the auth endpoint using the credentials of your test user.
+   
+   ![image](https://user-images.githubusercontent.com/37603257/132711454-afb6d27c-4465-431c-8069-2858dccabaf7.png)
+   
+   
    * Copy the token from the response.
    * Make a new GET request to the *user* endpoint adding the *Autorization header* with the word *Bearer* as this
      example:
