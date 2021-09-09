@@ -43,7 +43,7 @@ public class UserController
 
 
     @PostMapping
-    @RolesAllowed("ADMIN")
+    //@RolesAllowed("ADMIN")
     public ResponseEntity<User> create( @RequestBody UserDto userDto )
     {
         return ResponseEntity.ok( userService.create( userDto ) );
