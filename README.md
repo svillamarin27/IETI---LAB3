@@ -628,6 +628,8 @@ class SecurityConfiguration : WebSecurityConfigurerAdapter() {
    * Send a POST request to the auth endpoint using the credentials of your test user.
    
    ![image](https://user-images.githubusercontent.com/37603257/132711893-18056b3a-8e58-4e48-9c83-f0bc81f8c56d.png)
+   
+   ![image](https://user-images.githubusercontent.com/37603257/132712341-244cd180-e407-4b24-8b62-2e6a33967808.png)
 
    ![image](https://user-images.githubusercontent.com/37603257/132711454-afb6d27c-4465-431c-8069-2858dccabaf7.png)
    
