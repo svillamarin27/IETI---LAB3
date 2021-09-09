@@ -35,7 +35,7 @@ public class AuthController
         this.userService = userService;
     }
 
-    @PostMapping
+    @PostMapping("/user")
     public TokenDto login( @RequestBody LoginDto loginDto )
     {
         User user = userService.findByEmail( loginDto.email );
@@ -52,13 +52,14 @@ public class AuthController
 
     private String generateToken( User user, Date expirationDate )
     {
-        return Jwts.builder()
-                .setSubject( user.getId() )
+        String token= Jwts.builder()
+                .setSubject( "It Works !" )
                 .claim( CLAIMS_ROLES_KEY, user.getRoles() )
                 .setIssuedAt(new Date() )
                 .setExpiration( expirationDate )
-                .signWith( SignatureAlgorithm.HS256, secret )
+                .signWith( SignatureAlgorithm.HS256, secret)
                 .compact();
+        return "Bearer"+token;
     }
 
     private TokenDto generateTokenDto( User user )
